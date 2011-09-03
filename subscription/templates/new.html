@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block corpo %}
+<div id="formulario">
+    <h1>Formulário de inscrição</h1>
+    <form action="." method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Enviar!" class="button">
+    </form>
+</div>
+{% endblock corpo %}

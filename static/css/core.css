@@ -1,0 +1,49 @@
+body {
+    margin : 0px;
+    padding : 0px;
+    font-family: "Lucida Sans" , serif , "Lucida Sans" , sans-serif ;
+    color:#8b1126;
+    background-color:#7e838f;
+}
+a {
+	text-decoration: none;
+	color: #00dfce;
+}
+
+#Cabecalho {
+    height: 120px;
+    width: 100%;
+    background-color: #3b4f64;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+#contato {
+    position: absolute;
+    top:100px;
+    right: 0px;
+    color: #fff;
+}
+
+#content {
+    width:100%;
+    position: absolute;
+    top:120px;
+    text-align:center;
+	font-size: 18pt;
+    background-color: #FFF;
+}
+
+#saudacao {
+    width:100%;
+    font-size:50pt;
+    font-family: sans-serif, verdana;
+    color:#322a55;
+    font-weight: bold;
+    text-align: center;    
+}
+#formulario {
+    text-align:left;
+    width: 65%;
+    #border: 1px solid #000;
+}

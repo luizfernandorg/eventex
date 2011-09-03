@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt_BR" lang="pt_BR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Eventex - Home</title>
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/core.css"/>
+        <!-- color #3b4f64 -->
+    </head>
+    <body> 
+         <div id="basePage">
+            <div id="Cabecalho">
+                    <a href="/"><img src="{{ STATIC_URL }}imagens/logo.jpg" id="logo"/></a>
+                    <div id="contato">
+                        Para dúvidas e mais informações entre em contato pelo email: <a href="mailto:eventex@eventex.com.br">eventex@eventex.com.br</a>
+                    </div>
+            </div>
+            <div id="content">
+                {% block corpo %}
+                
+                {% endblock corpo %}
+            </div>
+        </div>
+    </body>
+</html>
