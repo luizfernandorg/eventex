@@ -15,7 +15,6 @@ class PhoneWidget(forms.MultiWidget):
     def decompress(self, value):
         if not value:
             return [None, None]
-        print "Retorno em decompress = ", value.split('-')
         return value.split('-')
     
 class PhoneField(forms.MultiValueField):
@@ -33,7 +32,6 @@ class PhoneField(forms.MultiValueField):
             raise forms.ValidationError(u'DDD inválido.')
         if data_list[1] in EMPTY_VALUES:
             raise forms.ValidationError(u'Número inválido.')
-        print "Retorno em compress = ", data_list
         return "%s-%s" % tuple(data_list)
     
 class SubscriptionForm(ModelForm):
@@ -45,7 +43,6 @@ class SubscriptionForm(ModelForm):
 
     def clean(self):
         super(SubscriptionForm, self).clean()
-        print self.cleaned_data
         if not self.cleaned_data.get('email') and not self.cleaned_data.get('phone'):
             raise forms.ValidationError(_(u'Informe seu e-mail ou telefone.'))
         
